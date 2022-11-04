@@ -4,8 +4,8 @@ const isDev = !app.isPackaged;
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 1028,
-    height: 854,
+    width: 1300,
+    height: 850,
     webPreferences: {
       nodeIntegration: false,
       worldSafeExecuteJavaScript: true,
