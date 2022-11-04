@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "dotenv-webpack": "^8.0.1",
     "electron": "^21.2.1",
     "electron-reload": "^2.0.0-alpha.1"
   },
