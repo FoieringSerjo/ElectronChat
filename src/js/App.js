@@ -13,7 +13,7 @@ export default function App() {
       <div className="content-wrapper">
         <Navbar />
         <Routes>
-          <Route path="/chat" element={<ChatView />} />
+          <Route path="/chat/:id" element={<ChatView />} />
           <Route path="/settings" element={<SettingsView />} />
           <Route path="/login" element={<LoginView />} />
           <Route path="/register" element={<RegisterView />} />
