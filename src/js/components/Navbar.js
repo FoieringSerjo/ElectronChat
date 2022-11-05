@@ -19,12 +19,7 @@ export default function Navbar() {
         </div>
         <div className="chat-navbar-inner-right">
           <span className="logged-in-user me-2">Hi User</span>
-          <button
-            onClick={() => navigate('/register')}
-            className="btn btn-outline-danger me-1">
-            Register
-          </button>
-          <Link to="/login" className="btn btn-outline-success me-1">
+          <Link to="/" className="btn btn-outline-success me-1">
             Login
           </Link>
         </div>
