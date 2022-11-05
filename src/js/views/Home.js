@@ -10,10 +10,7 @@ import { fetchChats } from '../actions/chats';
 export default function Home() {
   const dispatch = useDispatch();
   // debugger;
-  const chats = useSelector(({ chats }) => {
-    // debugger;
-    return chats.items;
-  });
+  const chats = useSelector(({ chats }) => chats.items);
 
   useEffect(() => {
     // debugger;
@@ -23,12 +20,11 @@ export default function Home() {
   return (
     <div className="row no-gutters fh">
       <div className="col-3 fh">
-        {JSON.stringify(chats)}
-        <JoinedChatsList />
+        <JoinedChatsList chats={chats} />
       </div>
       <div className="col-9 fh">
         <ViewTitle text="Choose you channel" />
-        <AvailableChatsList />
+        <AvailableChatsList chats={chats} />
       </div>
     </div>
   );
